@@ -1,0 +1,258 @@
+TASK 1
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	string bday;
+	int date;
+	cout<<"enter your date of birth :";
+	cin>>date;
+	cout<<"enter your month of birth :";
+	cin>>bday;
+		if(((date>=21 || date<=31) && bday=="march") || ((date>=1 || date<=20) && bday=="april"))
+		{
+			cout<<"your Astrological sign is: Aries"<<endl;
+		}
+		else if(((date>=21 || date<=30) && bday=="april") || ((date>=1 || date<=20) && bday=="may"))
+		{
+		    cout<<"your Astrological sign is: Taurus"<<endl;
+		}
+		else if(((date>=21 || date<=31) && bday=="may") || ((date>=1 || date<=20) && bday=="june"))
+		{
+		    cout<<"your Astrological sign is: Gemini"<<endl;
+		}
+		else if(((date>=21 || date<=30) && bday=="june") || ((date>=1 || date<=22) && bday=="july"))
+		{
+		    cout<<"your Astrological sign is: Cancer"<<endl;
+		}
+		else if(((date>=23 || date<=31) && bday=="july") || ((date>=1 || date<=22) && bday=="august"))
+		{
+		    cout<<"your Astrological sign is: Leo"<<endl;
+		}
+		else if(((date>=23 || date<=31) && bday=="august") || ((date>=1 || date<=22) && bday=="september"))
+		{
+		    cout<<"your Astrological sign is: Virgo"<<endl;
+		}
+		else if(((date>=23 || date<=30) && bday=="september") || ((date>=1 || date<=22) && bday=="october"))
+		{
+		    cout<<"your Astrological sign is: Libra"<<endl;
+		}
+		else if(((date>=23 || date<=31) && bday=="october") || ((date>=1 || date<=22) && bday=="november"))
+		{
+		    cout<<"your Astrological sign is: Scorpio"<<endl;
+		}
+		else if(((date>=23 || date<=30) && bday=="november") || ((date>=1 || date<=21) && bday=="december"))
+		{
+		    cout<<"your Astrological sign is: Sagittarius"<<endl;
+		}
+		else if(((date>=22 || date<=31) && bday=="december") || ((date>=1 || date<=19) && bday=="january"))
+		{
+		    cout<<"your Astrological sign is: Capricorn"<<endl;
+		}
+		else if(((date>=20 || date<=31) && bday=="january") || ((date>=1 || date<=19) && bday=="feburary"))
+		{
+		    cout<<"your Astrological sign is: Aquarius"<<endl;
+		}
+		else if(((date>=20 || date<=29) && bday=="feburary") || ((date>=1 || date<=20) && bday=="march"))
+		{
+		    cout<<"your Astrological sign is: PIsces"<<endl;
+		}
+		else
+		{
+			cout<<"your input is wrong"<<endl;
+		}
+		system("pause");
+		return 0;
+}
+		
+
+TASK 2
+
+int main()
+{
+	int x1 , x2 , x3 , x4 , x5 , x6 , x7 , x8 , x9 , x10 , mean;
+	cout<<"enter 10 numbers :"<<endl;
+	cin>>x1;
+	cin>>x2;
+	cin>>x3;
+	cin>>x4;
+	cin>>x5;
+	cin>>x6;
+	cin>>x7;
+	cin>>x8;
+	cin>>x9;
+	cin>>x10;
+	mean=(x1+x2+x3+x4+x5+x6+x7+x8+x9+x10)/10
+
+
+		   
+		system("pause");
+		return 0;
+}
+
+TASK 3
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	int rollno , x , y , z , total;
+	double per;
+	string name , division;
+	cout<<"enter roll no of student:";
+	cin>>rollno;
+	cout<<"enter name of student:";
+	cin>>name;
+	cout<<"marks in physics :";
+	cin>>x;
+	cout<<"marks in chemistry :";
+	cin>>y;
+	cout<<"marks in computer application :";
+	cin>>z;
+	total=x+y+z;
+	per=(total/300.0)*100;
+	
+	cout<<"Roll No :"<<rollno<<endl;
+	cout<<"name of student :"<<name<<endl;
+	cout<<"marks in Physics :"<<x<<endl;
+	cout<<"marks in Chemistry :"<<y<<endl;
+	cout<<"marks in Computer Application :"<<z<<endl;
+	cout<<"Total marks :"<<total<<endl;
+	cout<<"percentage :"<<per<<endl;
+	if(per>=60.00)
+	{
+		cout<<"division : first"<<endl;
+	}
+	else if(per<=59.99 && per>=45.00)
+	{
+        cout<<"division : second"<<endl;
+	}
+	else if(per<=44.99 && per>=33.00)
+	{
+		cout<<"division : third"<<endl;
+	}
+	else if(per<=32.99)
+	{
+		cout<<"fail"<<endl;
+	}
+        system("pause");
+		return 0;
+}
+
+TASK 4
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int x , y;
+	cout<<"enter co-ordinate of x-axis :";
+	cin>>x;
+	cout<<"enter co-ordinate of y-axis :";
+	cin>>y;
+	if(x>0 && y>0)
+	{
+		cout<<"point lies in first quadrant"<<endl;
+	}
+	else if(x<0 && y>0)
+	{
+		cout<<"point lies in first quadrant"<<endl;
+	}
+	else if(x<0 && y<0)
+	{
+		cout<<"point lies in first quadrant"<<endl;
+	}
+	else if(x>0 && y<0)
+	{
+		cout<<"point lies in first quadrant"<<endl;
+	}
+        system("pause");
+		return 0;
+}
+
+
+TASK 5
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int age;
+	cout<<"enter your age :";
+	cin>>age;
+	if(age>=20)
+	{
+		cout<<"you are eligible for vote casting"<<endl;
+	}
+	else
+        {
+		cout<<"you are not eligible for vote casting"<<endl;
+	}
+      system("pause");
+      return 0;
+}
+
+TASK 6
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	int hour , min , sec;
+	char opd;
+	string x;
+	cout<<"enter the time :";
+	cout<<"hour :";
+	cin>>hour;
+	cout<<"minute :";
+	cin>>min;
+	cout<<"second :";
+	cin>>sec;
+	cout<<"input am or pm (or no if in 24hr time) :";
+	cin>>x;
+	if(x=="am")
+	{
+		cout<<"do you want to convert it in 24hr time?(y/n):";
+		cin>>opd;
+		while(opd=='y')
+		{
+		cout<<hour<<":"<<min<<":"<<sec<<""<<endl;
+		break;
+		}
+	    if(x=="pm")
+	{
+		cout<<"do you want to convert it in 24hr time?(y/n):";
+		cin>>opd;
+		while(opd=='y')
+		{
+		hour=hour+12;
+		cout<<hour<<":"<<min<<":"<<sec<<""<<endl;
+		break;
+		}
+	}
+		if(x=="no")
+	{
+		cout<<"do you want to convert it in 12hr time?(y/n):";
+		cin>>opd;
+		while(opd=='y')
+		{
+			if(hour<=12)
+			{
+				cout<<hour<<":"<<min<<":"<<sec<<".am"<<endl;
+			}
+			if(hour>=12)
+			{
+				hour=hour-12;
+				cout<<hour<<":"<<min<<":"<<sec<<".pm"<<endl;
+			}
+			break;
+		}
+	}
+		system("pause");
+        return 0;
+}

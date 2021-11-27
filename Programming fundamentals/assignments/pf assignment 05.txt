@@ -1,0 +1,176 @@
+
+          AITZAZ TAHIR CH                            19P-0012
+          
+          BS(CS)-B                                   Pf assignment 05
+
+
+TASK 1
+
+#include<iostream>
+#include<string>
+#include<cmath>
+using namespace std;
+
+double chartoint(string a)
+{
+	char z=a[1];
+	
+double res=1;
+int v1=(int(a[0])-'0');
+int v2=(int(a[2])-'0');
+
+if(z=='+')
+	{
+		cout<<"Adddition: "<<endl;
+		res=v1+v2;
+	}
+	else if(z=='*')
+	{
+	cout<<"Multiplication: "<<endl;
+		res=v1*v2;
+	}
+	else if(z=='-')
+	{
+		cout<<"Subtraction: "<<endl;
+		res=v1-v2;
+	}
+	else if(z=='/')
+	{
+		cout<<"Division: "<<endl;
+		res=v1/v2;
+	}
+	else if(z=='^')
+	{
+		cout<<v1<<"^"<<v2<<endl;
+		for(int i=0;i<v2;i++)
+		{
+			res*=v1;
+		}
+		
+	}
+	else
+	{
+		cout<<"your input is wrong"<<endl;
+		res=0.0;
+	}
+	return res;
+}
+void test(int n[5][5])
+{
+		for(int i=0;i<5;i++)
+		{
+			for(int j=0;j<5;j++)
+	{
+	n[i][j]=i+1;
+	}
+		}
+	
+	
+}
+int main()
+{
+	cout<<"enter the input : ";
+	string a;
+	cin>>a;
+	cout<<chartoint(a)<<endl;
+	
+	system("pause");
+	return 0;	
+}
+
+
+TASK 2
+
+#include<iostream>
+#include<string>
+using namespace std;
+
+bool ans(int x)
+{
+   if(x>0)
+   {
+	   while(x%2==0)
+	   {
+		   x/=2;
+	   }
+	   if(x==1)
+	   {
+		   cout<<"number is a power of 2"<<endl;
+		   return true;
+	   }
+	   else
+	   {
+		   cout<<"number is not a power of 2"<<endl;
+		   return false;
+	   }
+
+   }
+
+}
+
+
+int main()
+{
+	int num , x;
+	cout<<"Enter the number : ";
+	cin>>num;
+	cout<<ans(num);
+	
+	system("pause");
+	return 0;	
+}
+
+
+TASK 3
+
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main()
+{
+	int a[100] , x , c, d , even=0 , odd=0;
+	cout<<"enter the numbr of coins :";
+	cin>>x;
+	x=x-1;
+	cout<<"input the coins : ";
+	for(int i=0;i<=x;i++)
+	{
+		cin>>a[i];
+	}
+	cout<<"end off input"<<endl;
+	for(int y=0;y<=x;y++)
+	{
+	
+	if(y%2==0)
+	{
+		c=a[y];
+		even=even+c;
+		cout<<"print even"<<endl;
+	}
+	}
+	for(int y=0;y<=x;y++)
+	{
+
+	if(y%2!=0)
+	{
+		d=a[y];
+		odd=odd+d;
+	cout<<"print odd"<<endl;
+	}
+	}	
+	if(even>odd)
+	{
+		cout<<"player 1 wins and player 2 looses "<<endl;
+	}
+	else
+		{
+		cout<<"player 2 wins and player 1 looses "<<endl;
+		}
+	system("pause");
+	return 0;	
+}
+
+---------------------------------------------------------------------------------------------------------------------------
+
+

@@ -1,0 +1,100 @@
+TASK 2
+
+#include<iostream>
+using namespace std;
+int main()
+
+{
+	int i , x ;
+	for(int i=1 ; i<=10 ; i++)
+	{
+		x=5*i;
+		cout<<"5*"<<5*i<<"="<<x<<endl;
+	}
+	system ("pause");
+	return 0;
+}
+
+TASK 1
+
+#include<iostream>
+using namespace std;
+int main()
+
+{
+	double a , b , sum=0 ;
+	for (int i=1 ; i<=5 ;i++)
+	{
+		a=pow(i,i);
+			b=1/(a);
+	cout<<"value for i is"<<b<<endl;
+	sum=sum+b;
+	}
+	cout<<"sum ="<<sum<<endl;
+	system ("pause");
+	return 0;
+}
+
+TASK 3
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int sum=0;
+	for (int i=0 ; i<=10 ; i+=2)
+	{
+	cout<<"numbers are :"<<i<<endl;
+	sum+=i;
+	}
+	cout<<sum;
+    system ("pause");
+	return 0;
+}
+
+
+
+TASK 4
+
+#include<iostream>
+using namespace std;
+int main()
+
+{
+	char u='y';
+	while(u=='y')
+	{
+	int x , y;
+	char opr;
+	cout<<"enter first number =";
+	cin>>x;
+	cout<<"enter second number =";
+	cin>>y;
+	cout<<"enter the operation you want to perform =";
+	cin>>opr;
+	if (opr='+')
+	{
+	cout<<"sum ="<<x+y<<endl;
+	}
+	else if (opr='-')
+	{
+	cout<<"subtraction ="<<x-y<<endl;
+	}
+	else if (opr='/')
+	{
+	cout<<"division ="<<x/y<<endl;
+	}
+	else if (opr='*')
+	{
+	cout<<"multiplication ="<<x*y<<endl;
+	}
+	else
+	{
+	cout<<"wrong key"<<endl;
+	}
+	cout<<"do you want to continue (y/n)?";
+	cin>>u;
+	}
+	system ("pause");
+	return 0;
+}

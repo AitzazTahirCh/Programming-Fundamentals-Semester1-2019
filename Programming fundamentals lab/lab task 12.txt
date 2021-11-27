@@ -1,0 +1,97 @@
+
+
+TASK 1
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	int a[10];
+	int x , num;
+	cout<<"enter 10 integer inputs :"<<endl;
+	for(int i=0;i<10;i++)
+	{
+		cin>>x;
+		a[i]=x;
+	}
+	cout<<"enter the number u want to check that if it exists or not :"<<endl;
+	cin>>num;
+	for(int i=0;i<10;i++)
+	{
+		if(num==a[i])
+		{
+			cout<<"it is present in array at posistion :"<<i<<endl;
+		}
+		
+	}
+	system("pause");
+	return 0;
+}
+
+TASK 2
+
+include<iostream>
+#include<string>
+using namespace std;
+int larger(int a,int b)
+{
+	if(a>b)
+	{
+		return a;
+	}
+	else if(a<b)
+	{
+		return b;
+	}
+}
+
+int main()
+{   int a[5]={1,2,3,4,5};
+    cout<<larger(a[0],(larger(a[1],(larger(a[2],(larger(a[3],a[4])))))));
+	system("pause");
+	return 0;
+}
+
+TASK 3
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{   int a[2]={1,2};
+    int sum , product;
+	sum=a[0]+a[1];
+	product=a[0]*a[1];
+	cout<<"sum = "<<sum;
+	cout<<"product = "<<product;
+	system("pause");
+	return 0;
+}
+
+TASK 4
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{   int a[10];
+    int b[10];
+	int e=9;
+    cout<<"input 10 values :"<<endl;
+    for(int i=0;i<10;i++)
+	{
+		cin>>a[i];
+		
+		a[i]=b[e];
+		e--;
+
+	}
+	for(int e=9;e>=0;e--)
+	{
+		cout<<a[e]<<endl;
+	}
+		
+	system("pause");
+	return 0;
+}

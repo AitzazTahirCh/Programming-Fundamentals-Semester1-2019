@@ -1,0 +1,94 @@
+              
+              
+              AITZAZ TAHIR CH                p19-0012                  
+              BS(CS)-B                       SIR SHOAIB (PF assignment no 1)
+
+                        TASK 1
+                 
+  1st method:
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num1 , num2;   
+	cout<<"enter first number"<<endl;
+	cin>>num1;
+	cout<<"enter second number"<<endl;
+	cin>>num2;
+	num1=num1+num2;
+	num2=num1-num2;
+	num1=num1-num2;
+    cout<<"after swapping"<<endl;
+	cout<<"num1 ="<<num1<<endl;
+	cout<<"num2 ="<<num2<<endl;
+	system ("pause");
+		return 0;
+}                  
+
+ 2nd method:
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num1 , num2 , temp;   
+	cout<<"enter first number"<<endl;
+	cin>>num1;
+	cout<<"enter second number"<<endl;
+	cin>>num2;
+	temp=num1;
+	num1=num2;
+	num2=temp;
+    cout<<"after swapping"<<endl;
+	cout<<"num1 ="<<num1<<endl;
+	cout<<"num2 ="<<num2<<endl;
+	system ("pause");
+		return 0;
+}       
+
+       
+                         TASK 2
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int no , a;
+	cout<<"enter any number"<<endl;
+	cin>>no;
+	a=-no;
+	cout<<"your desired output is ="<<a<<endl;
+	system ("pause");
+		return 0;
+}
+
+                         TASK 3
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int x;
+	double y=0;
+	cout<<"type integer 1 :";
+	cin>>x;
+	y=y+x;
+	cout<<"type integer 2 :";
+	cin>>x;
+	y=y+x;
+	cout<<"type integer 3 :";
+	cin>>x;
+	y=y+x;
+	cout<<"type integer 4 :";
+	cin>>x;
+	y=y+x;
+	cout<<"type integer 5 :";
+	cin>>x;
+	y=y+x;
+	y=y/5.0;
+	cout<<"average is :"<<y<<endl;
+	system("pause");
+		return 0;
+}

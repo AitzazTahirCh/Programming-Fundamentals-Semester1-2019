@@ -1,0 +1,128 @@
+
+LAB 9
+
+
+TASK 1
+
+
+#include<iostream>
+#include<string>
+#include<fstream>
+using namespace std;
+
+void ascending(int a ,int b ,int c)
+{
+	if(a<b && b<c)
+	{
+		cout<<a<<" "<<b<<" "<<c;
+	}
+	else if(a<c && c<b)
+	{
+		cout<<a<<" "<<c<<" "<<b;
+	}
+	else if(b<a && a<c)
+	{
+		cout<<b<<" "<<a<<" "<<c;
+	}
+	else if(b<c && c<a)
+	{
+		cout<<b<<" "<<c<<" "<<a;
+	}
+	else if(c<a && a<b)
+	{
+		cout<<c<<" "<<a<<" "<<b;
+	}
+	else
+	{
+		cout<<c<<" "<<b<<" "<<a;
+	}
+	
+}
+
+
+
+int main()
+{
+	int x, y,z,r;
+	cout<<"enter 3 numbers:";
+	cin>>x>>y>>z;
+	ascending(x,y,z);
+	system("pause");
+	return 0;
+}
+
+
+TASK 2
+
+
+#include<iostream>
+#include<string>
+#include<fstream>
+#include<cmath>
+using namespace std;
+
+int sum(int n)
+{
+	double a, b, sum=0;
+	for(int i=1;i<=n;i++)
+	{
+		a=pow(i,i);
+		b=1/(a);
+		sum=sum+b;
+		cout<<"1/"<<i<<"^"<<i<<"="<<b<<endl;
+	}
+	cout<<"sum of series is ="<<sum<<endl;
+	return sum;
+}
+
+
+
+int main()
+{
+	int n, a;
+	cout<<"enter the nth term of series :"<<endl;
+	cin>>n;
+	a=sum(n);
+	cout<<a;
+	system("pause");
+	return 0;
+}
+
+
+TASK 3
+
+
+#include<iostream>
+#include<string>
+#include<cmath>
+using namespace std;
+
+void perfectno(int n)
+{
+	int sum=0;
+	for(int i=1;i<=n;i++)
+	{
+		double mod=0.00;
+		mod=n%i;
+		if(mod==0.00)
+		{
+			cout<<"proper divisor:"<<i<<endl;
+			sum=sum+i;
+		}
+	}
+	
+	cout<<sum-n<<endl;
+   
+}
+
+
+
+int main()
+{
+	int x;
+	cout<<"enter the number you want to check:";
+	cin>>x;
+	perfectno(x);
+	system("pause");
+	return 0;
+}

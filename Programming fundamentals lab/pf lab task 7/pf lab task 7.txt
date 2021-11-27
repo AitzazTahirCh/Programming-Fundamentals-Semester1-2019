@@ -1,0 +1,168 @@
+TASK 1
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	string x , y , a , b , rock , paper , scissors;
+	char  op;
+	do
+	{
+	cout<<"player 1 name =";
+	cin>>x;
+	cout<<"player 2 name =";
+	cin>>y;
+	cout<<"lets play rock, paper or scissors"<<endl;
+	cout<<x<<"do you want to choose rock, paper or scissors?"<<endl;
+	cin>>a;
+	cout<<y<<"do you want to choose rock, paper or scissors?"<<endl;
+	cin>>b;
+	if(a==b)
+	{
+		cout<<"its a tie";
+	}
+	else if(x=="rock" && y=="paper" || x=="scissors" && y=="paper" || x=="scissors" && y=="rock" || x=="paper" && y=="scissors" )
+	{
+		cout<<y<<"wins";
+	}
+	else if(y=="rock" && x=="paper" || y=="scissors" && x=="paper" || y=="scissors" && x=="rock" || y=="paper" && x=="scissors" )
+	{
+		cout<<x<<"wins";
+	}
+	else
+	{
+		cout<<"your input is wrong re-enter";
+		cout<<x<<"do you want to choose rock, paper or scissors?"<<endl;
+	cin>>a;
+	cout<<y<<"do you want to choose rock, paper or scissors?"<<endl;
+	cin>>b;
+	if(a==b)
+	{
+		cout<<"its a tie";
+	}
+	else if(x=="rock" && y=="paper" || x=="scissors" && y=="paper" || x=="scissors" && y=="rock" || x=="paper" && y=="scissors" )
+	{
+		cout<<y<<"wins";
+	}
+	else if(y=="rock" && x=="paper" || y=="scissors" && x=="paper" || y=="scissors" && x=="rock" || y=="paper" && x=="scissors" )
+	{
+		cout<<x<<"wins";
+	}
+	}
+	cout<<"do you want to play again(y/n)?";
+	cin>>op;
+	}while(op!='n');
+	cout<<"thks for playing"<<endl;
+	system("pause");
+	return 0;
+}
+
+
+TASK 2
+
+
+
+
+TASK 3
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	for(int i=100; i<=200 ; i=i+9)
+	{
+		cout<<i<<endl;
+	}
+system("pause");
+return 0;
+}
+
+TASK 4
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+	int accnum, minimumbal , balance , scharge=0;
+	char acctype;
+	float net , interest=0;
+	cout<<"enter account no. :"<<endl;
+	cin>>accnum;
+	cout<<"enter the type of account ( s for savings, c for checking): "<<endl;
+	cin>>acctype;
+	cout<<"enter the minimum balance for your account: "<<endl;
+	cin>>minimumbal;
+	cout<<"enter the current balance; "<<endl;
+	cin>>balance;
+		if(acctype=='s')
+		{
+			if(balance>=minimumbal)
+			{
+				net=balance+(balance*0.04);
+				interest=(balance*0.04);
+			}
+			else if(balance<minimumbal)
+			{
+				net=balance-10;
+				scharge=10;
+			}
+		}
+		else if(acctype=='c')
+		{
+			if(balance<minimumbal)
+			{
+				net=balance-25;
+					scharge=25;
+			}
+			else if(balance>=(minimumbal+5000))
+			{
+				net=balance+(balance*0.03);
+				interest=(balance*0.03);
+			}
+			else if(balance>=minimumbal)
+			{
+				net=balance+(balance*0.05);
+				interest=(balance*0.05);
+			}
+		}
+		cout<<"interest received ;$"<<interest<<endl;
+		cout<<"services charges ;$"<<scharge<<endl;
+		cout<<"total balance ;$"<<net<<endl;
+		system("pause");
+		return 0;
+}
+TASK 5
+
+#include<iostream>
+using namespace std;
+int main() 
+{
+   int a,b,c;
+   cout<<"Please enter three numbers: ";
+   cin>>a;
+   cin>>b;
+   cin>>c;
+   if (a < b && b < c) 
+   {
+      cout<<a<<b<<c;
+   }
+   else if (a > b && b > c) 
+   {
+      cout<<c<<b<<a;
+   }
+   
+   else if (a < b && b > c) 
+   {
+      cout<<a<<c<<b;
+   }
+   else 
+   {
+	   cout<<"Your input is wrong";
+   }
+   system("pause");
+   return 0;
+}
+
+	

@@ -1,0 +1,76 @@
+TASK 1
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int x , y , a , s , d , m ;
+	cout<<"enter the value of x"<<endl;
+	cin>>x;
+	cout<<"enter the value of y"<<endl;
+	cin>>y;
+	a=x+y;
+	cout<<"sum="<<a<<endl;
+	s=y-x;
+	cout<<"sub="<<s<<endl;
+	d=y/x;
+	cout<<"div="<<d<<endl;
+	m=x*y;
+	cout<<"mul="<<m<<endl;
+	system("pause");
+		return 0;
+}
+
+TASK 2
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int length , width , area;
+	cout<<"enter the length"<<endl;
+	cin>>length;
+	cout<<"enter the breadth"<<endl;
+	cin>>width;
+	area=length*width;
+	cout<<"area of rectangle is ="<<area<<endl;
+	system("pause");
+		return 0;
+}
+
+TASK 3
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int r , d , c , a , pi=3.1416 ;
+    cout<<"enter the radius of circle ="<<endl;
+	cin>>r;
+	d=2*r;
+	c=2*pi*r;
+    a=pi*r^2;
+	cout<<"diameter of circle is ="<<d<<endl;
+	cout<<"circumference of circle is ="<<c<<endl;
+	cout<<"area of circle is ="<<a<<endl;
+	system("pause");
+		return 0;
+}
+
+TASK 4
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	float kilograms , grams , po;
+    cout<<"enter the value in pounds ="<<endl;
+	cin>>po;
+	kilograms=po*0.454;
+    grams=po*453.59237;
+	cout<<"value in kilograms is ="<<kilograms<<endl;
+	cout<<"value in grams is ="<<grams<<endl;
+	system("pause");
+		return 0;
+}
+

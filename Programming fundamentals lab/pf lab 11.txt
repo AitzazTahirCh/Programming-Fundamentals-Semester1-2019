@@ -1,0 +1,112 @@
+
+
+TASK 1
+
+#include<iostream>
+using namespace std;
+bool wo(char x)
+{
+	if(x=='a' || x=='e' || x=='i' || x=='o' || x=='u'|| x=='A' || x=='E' || x=='I' || x=='O' || x=='U')
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+int main()
+{
+	char x;
+	cout<<"Enter the letter u want to check :";
+    cin>>x;
+	cout<<wo(x);
+	system ("pause");
+	return 0;
+}
+
+
+TASK 2
+
+
+#include<iostream>
+using namespace std;
+
+double ans(double x,double y,double z)
+{
+	double a;
+	a=(x+y)*z;
+	return a;
+}
+
+int main()
+{
+	double x,y,z;
+    cout<<"enter the 3 values :";
+	cin>>x>>y>>z;
+	cout<<ans(x,y,z);
+	system ("pause");
+	return 0;
+}
+
+
+TASK 3
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+double distance(double x1,double y1,double x2,double y2)
+{
+	double x , y , a , b , c ,dis;
+	x=x2-x1;
+	y=y2-y1;
+	a=pow(x,2);
+	b=pow(y,2);
+	c=a+b;
+	dis=sqrt(c);
+		return dis;
+}
+
+double radius(double x1,double y1,double x2,double y2)
+{
+	double x;
+	x=distance(x1,y1,x2,y2);
+	return x;
+}
+double circum(double x1,double y1,double x2,double y2)
+{
+	double pi=3.1416 , circ , rad;
+	rad=radius(x1,y1,x2,y2);
+	circ=2*pi*rad;
+	return circ;
+}
+double area(double x1,double y1,double x2,double y2)
+{
+	double a , pi=3.1416 , r ,ra;
+	ra=radius(x1,y1,x2,y2);
+	r=(ra,2);
+	a=pi*r;
+	return a;
+}
+
+
+
+
+
+int main()
+{
+	double x1,x2,y1,y2;
+    cout<<"enter the 4 points :";
+	cin>>x1>>y1>>x2>>y2;
+	cout<<"distance ="<<distance(x1,y1,x2,y2)<<endl;
+	cout<<"radius ="<<radius(x1,y1,x2,y2)<<endl;
+	cout<<"circumference ="<<circum(x1,y1,x2,y2)<<endl;
+	cout<<"area ="<<area(x1,y1,x2,y2)<<endl;
+	system ("pause");
+	return 0;
+}
+
+TASK 4
+

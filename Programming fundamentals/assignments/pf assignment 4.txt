@@ -1,0 +1,114 @@
+
+    Aitzaz Tahir Ch                                                                pf assignment no 4
+    19p-0012                                                                       BS(CS)-B
+
+
+                                                   TASK 1
+
+#include<iostream>
+#include<string>
+#include<fstream>
+using namespace std;
+void num(int x)
+{
+	int a, b;
+	for(int i=1;i<=x;i++)
+	{
+		if(x%i==0)
+		{
+		a=x;
+		b=i;
+		cout<<"numbers are "<<a<<" and "<<b<<endl;
+		}
+		else
+		{
+			cout<<"error"<<endl;
+		}
+	}
+}
+
+void dif(string a,int b,int c)
+{
+	ofstream outfile;
+	outfile.open("a");
+	outfile<<b<<" "<<c;
+	outfile.close();
+}
+
+void file(string a)
+{
+	ifstream infile;
+	infile.open("a");
+
+	int b , c;
+	infile>>b>>c;
+	if( (b%2==0) && (c%2==0) )
+	{
+		ofstream even;
+		even.open("even.txt");
+		even<<b<<" "<<c;
+		even.close();
+	}
+	else if( (!b%2==0) && (!c%2==0) )
+	{
+		ofstream odd;
+		odd.open("odd.txt");
+		odd<<b<<" "<<c;
+		odd.close();
+	}
+	if( (b%2==0) && (!c%2==0) || (!b%2==0) && (c%2==0) )
+	{
+		ofstream eo;
+		eo.open("eo.txt");
+		eo<<b<<" "<<c;
+		eo.close();
+	}
+}
+
+
+
+int main()
+{
+	int x , b , c;
+	cout<<"enter the number :";
+	cin>>x;
+	num(x);
+
+	string a;
+	cout<<"enter the file name :";
+	cin>>a;
+	cout<<"enter the two number u want check :";
+	cin>>b>>c;
+	dif(a,b,c);
+	file(a);
+
+	system("pause");
+	return 0;
+}
+
+
+
+
+                                                          TASK 2
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	int n , close=0 , open=0;
+	cout<<"enter the no. of students which are equal to the no. of lockers =";
+	cin>>n;
+	for(int i=2;i<=n;i=i+2)
+	{
+		close++;
+	}
+	for(int x=1;x<=n;x=x+2)
+	{
+		open++;
+	}
+	cout<<"total no. of lockers open ="<<open<<endl;
+	cout<<"total no. of lockers closed ="<<close<<endl;
+	system("pause");
+	return 0;
+}

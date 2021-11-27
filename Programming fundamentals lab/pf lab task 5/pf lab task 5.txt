@@ -1,0 +1,104 @@
+                         TASK 1
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int x;
+	cout<<"enter the value of integer =";
+	cin>>x;
+	if (x%2==0)
+	{
+		cout<<"integer is even"<<endl;
+	}
+	else
+	{
+		cout<<"integer is odd";
+	}
+	system("pause");
+		return 0;
+}
+
+TASK 2
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main ();
+{
+	int w, l ;
+	char x;
+	cout<<"enter the width of rectangle:";
+	cin>>w;
+	cout<<"enter the length of rectangle:";
+	cin>>l;
+	cout<<"enter the operation you want to perform:";
+	cin>>x;
+		if (x==area)
+	{
+		area=l*w;
+		}
+		if else (x==perimeter)
+		{
+			perimeter=2*l+2*w;
+		}
+		if else (x==diagonal)
+			{
+				square=(l^2+w^2);
+			diagonal = sqrt(square);
+		}
+
+	system("pause");
+			return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+TASK 3
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	char op;
+	int x , y ;
+	cout<<"enter the operator";
+	cin>>op;
+	cout<<"enter the first number =";
+	cin>>x;
+	cout<<"enter the second number =";
+	cin>>y;
+	switch(op)
+	{
+	case '+':
+		cout<<x+y;
+		break;
+	case '-':
+		cout<<x-y;
+		break;
+	case '*':
+		cout<<x*y;
+		break;
+	case '/':
+		cout<<x/y;
+		break;
+	case '%':
+		cout<<x%y;
+		break;
+	default:
+		     cout<<"errot! operator is not correct";
+			 break;
+	}
+       system("pause");
+		return 0;
+}

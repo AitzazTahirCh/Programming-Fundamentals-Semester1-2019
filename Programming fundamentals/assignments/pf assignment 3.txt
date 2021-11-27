@@ -1,0 +1,220 @@
+
+
+
+                          AITZAZ TAHIR                               PF ASSIGNMENT 3
+                          19p-0012                                      BS(CS)-B
+                                                  
+                                    
+
+                                                    TASK 1
+
+DATA FILE
+
+John 80
+Brad 45
+Anna 65
+
+PROGRAM
+
+#include<fstream>
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	ifstream infile;
+	infile.open("results.txt");
+	int marks;
+	string name , grade;
+	
+	for(int i=1; i<=3; i++)
+	{
+		infile>>name>>marks;
+		if(marks>=90)
+		{
+			grade="A+";
+		}
+		else if(marks>=86 && marks<=89)
+		{
+			grade="A";
+		}
+		else if(marks>=82 && marks<=85)
+		{
+			grade="A-";
+		}
+		else if(marks>=78 && marks<=81)
+		{
+			grade="B+";
+		}
+		else if(marks>=74 && marks<=77)
+		{
+			grade="B";
+		}
+		else if(marks>=70 && marks<=73)
+		{
+			grade="B-";
+		}
+		else if(marks>=66 && marks<=69)
+		{
+			grade="C+";
+		}
+		else if(marks>=62 && marks<=65)
+		{
+			grade="C";
+		}
+		else if(marks>=58 && marks<=61)
+		{
+			grade=="C-";
+		}
+		else if(marks>=54 && marks<=57)
+		{
+			grade=="D+";
+		}
+		else if(marks>=50 && marks<=53)
+		{
+			grade=="D";
+		}
+		else if(marks<=50)
+		{
+			grade=="F";
+		}
+		else
+		{
+			cout<<"your input is wrong"<<endl;
+		}
+	cout<<name<<":"<<grade<<endl;
+	}
+		
+	
+	system("pause");
+		return 0;
+}
+
+
+
+                                                         TASK 2
+
+DATA FILE
+
+250 5750
+100 28000
+50 35750
+25 18750
+
+PROGRAM
+
+
+#include<fstream>
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	ifstream infile;
+	infile.open("data.txt");
+	ofstream outfile;
+	outfile.open("result.txt");
+
+	int poft , nooft , tsale;
+	string type;
+
+	for(int i=0;i<=3;i++)
+	{
+		infile>>poft>>nooft;
+		tsale=poft*nooft;
+		outfile<<"No.Of.Tickets.Sold"<<"\t"<<"Total.Sale.Amount:$"<<endl;
+	    outfile<<nooft<<"\t"<<tsale<<endl;
+	}
+	system("pause");
+	return 0;
+}
+
+
+
+#include<fstream>
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	ofstream outfile;
+	outfile.open("result.txt");
+
+	int tbox , tsideline , tpremium , tgeneral , tb , ts , tp , tg;
+	string type;
+
+	cout<<"enter the price of box ticket :";
+	cin>>tbox;
+	cout<<"enter the price of sideline ticket :";
+	cin>>tsideline;
+	cout<<"enter the price of premium ticket :";
+	cin>>tpremium;
+	cout<<"enter the price of general ticket :";
+	cin>>tgeneral;
+	for(int i=0;i<=3;i++)
+	{
+		cout<<"enter type of ticket:";
+		cin>>"type";
+		if(type=="box")
+		{
+
+			cout<<"number of people bought this ticket:";
+			cin>>tb;
+	
+		}
+		else if(type=="sideline")
+		{
+			cout<<"number of people bought this ticket:";
+			cin>>ts;
+			
+		}
+		else if(type=="premium")
+		{
+			cout<<"number of people bought this ticket:";
+			cin>>tp;
+			
+		}
+		else if(type=="general")
+		{
+			cout<<"number of people bought this ticket:";
+			cin>>tg;
+			
+		}
+		else
+		{
+			cout<<"your input is wrong";
+		}
+	}
+	outfile<<"TicketPrice"<<""<<"NumberOfTicketsSold"<<endl;
+	outfile<<tbox<<""<<tb<<endl;
+	outfile<<tsideline<<""<<ts<<endl;
+	outfile<<tpremium<<""<<tp<<endl;
+	outfile<<tgeneral<<""<<tg<<endl;
+	system("pause");
+	return 0;
+}
+
+                                              or
+
+#include<iostream>
+#include<fstream>
+#include<string>
+using namespace std;
+int main()
+{
+	int ticketPrice,numberOfTickets,totalCost=0,totaltickets=0;
+	ifstream ftickets;
+	ftickets.open("tickets.txt");
+	while(ftickets>>ticketPrice)
+	{
+		ftickets>>numberOfTickets;
+		totalCost=totalCost+(ticketPrice*numberOfTickets);
+		totaltickets=totaltickets+numberOfTickets;
+	}
+	cout<<"Number of tickets sold: "<<totaltickets<<endl;
+        cout<<"Total sale amount: $"<<totalCost<<endl;
+
+	system("pause");
+	return 0;
+}
+

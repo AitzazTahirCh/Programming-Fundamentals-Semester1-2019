@@ -1,0 +1,176 @@
+#include<iostream>
+using namespace std;
+
+void matrix(int a[5][5] )
+{
+	for(int i=0;i<=4;i++)
+	{
+		for(int j=0;j<=4;j++)
+		{
+			cout<<"Enter value a["<<i<<"]["<<j<<"]: ";
+			//cin>>a[i][j];
+			a[i][j]=i*j+1;
+		}
+		cout<<endl;
+	}
+}
+
+void print_matrix(int a[5][5] )
+{
+	for(int i=0;i<=4;i++)
+	{
+		for(int j=0;j<=4;j++)
+		{
+			cout<<a[i][j]<<"\t";
+		}
+		cout<<endl;
+	}
+}
+
+void sum_rc(int a[5][5] )
+{
+	int sumr=0;
+	for(int i=0;i<=4;i++)
+	{
+		for(int j=0;j<=4;j++)
+		{
+			sumr=sumr+a[i][j];
+			
+		}
+		cout<<"sum of row "<<i+1<<" ="<<sumr<<endl;
+			sumr=0;
+		cout<<endl;
+	}
+	int sumc=0;
+	for(int j=0;j<=4;j++)
+	{
+		for(int i=0;i<=4;i++)
+		{
+			sumc=sumc+a[i][j];
+			
+		}
+		cout<<"sum of coloumn "<<j+1<<" ="<<sumc<<endl;
+			sumc=0;
+		cout<<endl;
+	}
+
+}
+
+void issparse(int a[5][5] )
+{
+	int s=0 , r=5 , c=5 , x=0;
+	for(int j=0;j<=4;j++)
+	{
+		for(int i=0;i<=4;i++)
+		{
+			if(a[i][j]==0)
+			{
+				s=s+1;
+			}	
+		}
+	}
+	x=(r*c)/2;
+	if(s>=x)
+	{
+		cout<<"It is a sparse matrix"<<endl;
+	}
+	else
+	{
+		cout<<"It is not a sparse matrix"<<endl;
+	}
+}
+
+void trans(int a[5][5] )
+{
+	int b[5][5];
+	for(int i=0;i<=4;i++)
+	{
+		for(int j=0;j<=4;j++)
+		{
+			
+			b[i][j]=a[j][i];
+		
+		}
+		
+	}
+print_matrix(b);
+}
+
+void isupper(int a[5][5] )
+{
+	for(int i=0;i<=4;i++)
+	{
+		for(int j=0;j<=0;j++)
+		{ 
+			for(int j=0;j<=0;j++)
+			{
+				if(a[i][j]==0)
+				{
+	    	  for(int j=0;j<=1;j++)
+			{
+				if(a[i][j]==0)
+				{
+                for(int j=0;j<=2;j++)
+			{   
+				if(a[i][j]==0)
+				{
+				  for(int j=0;j<=3;j++)
+			{
+				cout<<"It is an upper triangular matrix"<<endl;
+			}
+				}
+			}
+				}
+			}
+			}
+				else
+			cout<<"It is not an upper triangular matrix"<<endl;
+		}
+			
+}
+	}
+}
+bool uper(int a[5][5] )
+{
+
+for(int r=0;r<5;r++)
+{
+for(int c=0;c<=r;c++)
+{
+	if(a[r][c]==0)
+	{
+	//do nothinng proceed
+	}
+	else
+	{
+	return false;
+	}
+}
+
+}
+
+return true;
+}
+int main()
+{
+	int a[5][5] ;
+	
+	matrix(a);
+	cout<<"matrix is : "<<endl;
+	cout<<endl;
+	print_matrix(a );
+	sum_rc(a );
+	cout<<endl;
+	issparse(a );
+	cout<<endl;
+	cout<<"Transpose of matrix is : "<<endl;
+	trans(a );
+	cout<<endl;
+	isupper(a);
+	cout<<uper(a)<<endl;
+
+	system("pause");
+	return 0;
+
+
+}

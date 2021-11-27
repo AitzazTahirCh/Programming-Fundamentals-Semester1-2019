@@ -1,0 +1,243 @@
+#include<iostream>
+#include<string>
+#include<cmath>
+using namespace std;
+
+int ans(string a)
+{
+	string s[3]={a};
+	int b;
+	int('s[0]');
+	int('s[2]');
+	if(s[1]=="+")
+	{
+		int b;
+		b=s[0]+s[2];
+		cout<<"sum = "<<b<<endl;
+	}
+	else if(s[1]=="*")
+	{
+		int b;
+		b=s[0]*s[2];
+		cout<<"after multiplication = "<<b<<endl;
+	}
+	else if(s[1]=="-")
+	{
+		int b;
+		b=s[0]-s[2];
+		cout<<"after subtraction = "<<b<<endl;
+	}
+	else if(s[1]=="/")
+	{
+		int b;
+		b=s[0]/s[2];
+		cout<<"after division = "<<b<<endl;
+	}
+	else if(s[1]=="^")
+	{
+		int b;
+		b=pow(s[0],s[2]);
+		cout<<"sum = "<<b<<endl;
+	}
+	else
+	{
+		cout<<"your input is wrong"<<endl;
+	}
+	return b;
+}
+int main()
+{
+	string a;
+	cout<<"input the data :"<<endl;
+	cin>>a;
+	cout<<ans(a)<<endl;
+	system("pause");
+	return 0;
+}
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+#include<iostream>
+#include<string>
+#include<cmath>
+using namespace std;
+
+char ans(string a)
+{
+	string s[3]={a};
+	int b;
+	int("s[0]");
+	int("s[2]");
+	if(s[1]=="+")
+	{
+		return '+';
+	}
+	else if(s[1]=="*")
+	{
+		return '*';
+	}
+	else if(s[1]=="-")
+	{
+		return '-';
+	}
+	else if(s[1]=="/")
+	{
+		return '/';
+	}
+	else if(s[1]=="^")
+	{
+		return '^';
+	}
+	else
+	{
+		cout<<"your input is wrong"<<endl;
+	}
+	return b;
+}
+
+int abc(string a)
+{
+	string a[3]={a};
+	int("a[0]");
+	int("a[2]");
+	char z;
+	int b;
+	ans(a);
+	z=ans(a);
+	if(z=='+')
+	{
+		b=a[0]+a[2];
+		cout<<"after addition : "<<b<<endl;
+	}
+	else if(z=='*')
+	{
+		int b;
+		b=a[0]*a[2];
+		cout<<"after multiplication = "<<b<<endl;
+	}
+	else if(z=='-')
+	{
+		int b;
+		b=a[0]-a[2];
+		cout<<"after subtraction = "<<b<<endl;
+	}
+	else if(z=='/')
+	{
+		int b;
+		b=a[0]/a[2];
+		cout<<"after division = "<<b<<endl;
+	}
+	else if(z=='^')
+	{
+		int b;
+		b=pow(a[0],a[2]);
+		cout<<"sum = "<<b<<endl;
+	}
+	else
+	{
+		cout<<"your input is wrong"<<endl;
+	}
+	return b;
+}
+int main()
+{
+	string a;
+	cout<<"input the data :"<<endl;
+	cin>>a;
+	cout<<abc(a)<<endl;
+	system("pause");
+	return 0;
+}
+
+----------------------------------------------------------------------------------------------------------------------------
+
+#include<iostream>
+#include<string>
+#include<cmath>
+using namespace std;
+
+char ans(string a)
+{
+	string s[3]={a};
+	int b;
+	int('s[0]');
+	int('s[2]');
+	if(s[1]=="+")
+	{
+		return '+';
+	}
+	else if(s[1]=="*")
+	{
+		return '*';
+	}
+	else if(s[1]=="-")
+	{
+		return '-';
+	}
+	else if(s[1]=="/")
+	{
+		return '/';
+	}
+	else if(s[1]=="^")
+	{
+		return '^';
+	}
+	else
+	{
+		cout<<"your input is wrong"<<endl;
+	}
+	return b;
+}
+
+int abc(string a)
+{
+
+	char z;
+	int b;
+	ans(a);
+	z=ans(a);
+	if(z=='+')
+	{
+		b=a[0]+a[2];
+		cout<<"after addition : "<<b<<endl;
+	}
+	else if(z=='*')
+	{
+		int b;
+		b=a[0]*a[2];
+		cout<<"after multiplication = "<<b<<endl;
+	}
+	else if(z=='-')
+	{
+		int b;
+		b=a[0]-a[2];
+		cout<<"after subtraction = "<<b<<endl;
+	}
+	else if(z=='/')
+	{
+		int b;
+		b=a[0]/a[2];
+		cout<<"after division = "<<b<<endl;
+	}
+	else if(z=='^')
+	{
+		int b;
+		b=pow(a[0],a[2]);
+		cout<<"sum = "<<b<<endl;
+	}
+	else
+	{
+		cout<<"your input is wrong"<<endl;
+	}
+	return b;
+}
+int main()
+{
+	string a;
+	cout<<"input the data :"<<endl;
+	cin>>a;
+	cout<<abc(a)<<endl;
+	system("pause");
+	return 0;
+}

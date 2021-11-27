@@ -1,0 +1,80 @@
+
+LAB TASK 10
+
+TASK 1
+
+#include<iostream>
+#include<string>
+#include<fstream>
+using namespace std;
+int main()
+{
+	int x=0;
+	string para , word , b;
+	cout<<"enter a paragraph :"<<endl;
+	cin>>para;
+	cin.ignore();
+	getline(cin,para);
+
+
+	ofstream outfile;
+	outfile.open("in.txt");
+	outfile<<para;
+	outfile.close();
+
+	ifstream infile;
+	infile.open("in.txt");
+
+    cout<<"enter the word u want to check frequency of :";
+	cin>>word;
+
+	while(!infile.eof())
+	{
+		infile>>b;
+		if(word==b)
+		{
+			x++;
+		}	
+	}
+	
+	infile.close();
+	cout<<"frequency is ="<<x;
+	system("pause");
+	return 0;
+}
+
+
+TASK 2
+
+
+#include<iostream>
+#include<string>
+#include<fstream>
+using namespace std;
+int main()
+{
+	string name;
+	int semester , warnings , tw=0 , no=0;
+	double gpa , tgpa=0 , avg=0;
+	ifstream infile;
+	infile.open("students.txt");
+	while(!infile.eof())
+	{
+		infile>>name>>semester>>gpa>>warnings;
+		if(warnings>0)
+		{
+			tw++;
+		}
+	   no++;
+	   tgpa=tgpa+gpa;
+	}
+	avg=tgpa/no;
+	cout<<"no. of students having same no. of warnings="<<tw<<endl;
+	cout<<"avg gpa="<<avg<<endl;
+	system("pause");
+	return 0;
+}
+
+
+TASK 3
+

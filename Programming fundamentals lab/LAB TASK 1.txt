@@ -1,0 +1,95 @@
+TASK 1
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int x , y;
+	cout<<"enter value x:"<<endl;
+	cin>>x;
+	cout<<"enter value of y:"<<endl;
+	cin>>y;
+	cout<<"sum of both numbers is = "<<x+y<<endl;
+    system("pause");
+	return 0;
+}
+
+TASK 2
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	string name;
+	int cellno;
+	string address;
+	cout<<"enter the name :"<<endl;
+	cin.ignore();
+	getline(cin,name);
+	cout<<"enter your cell no :"<<endl;
+	cin>>cellno;
+	cout<<"enter your address :"<<endl;
+	cin.ignore();
+	getline(cin,address);
+	cout<<"your name is = "<<name<<endl;
+	cout<<"your cell no is = "<<cellno<<endl;
+	cout<<"your address is = "<<address<<endl;
+    system("pause");
+	return 0;
+}
+
+TASK 3
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	string name;
+	int no;
+	float f;
+	double d;
+	cout<<"enter the name :"<<endl;
+	cin.ignore();
+	getline(cin,name);
+	cout<<"enter no :"<<endl;
+	cin>>no;
+	cout<<"enter float :"<<endl;
+	cin>>f;
+	cout<<"enter double :"<<endl;
+	cin>>d;
+	cout<<"your name is = "<<name<<endl;
+	cout<<"your no is = "<<no<<endl;
+	cout<<"your float is = "<<f<<endl;
+	cout<<"your double is = "<<d<<endl;
+    system("pause");
+	return 0;
+}
+
+TASK 4
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	string name;
+	int no;
+	float f;
+	double d;
+	//cout<<"enter the name :"<<endl;
+	cin.ignore();
+	getline(cin,name);
+	/*cout<<"enter no :"<<endl;
+	cin>>no;
+	cout<<"enter float :"<<endl;
+	cin>>f;
+	cout<<"enter double :"<<endl;
+	cin>>d;
+	cout<<"your name is = "<<name<<endl;
+	cout<<"your no is = "<<no<<endl;
+	cout<<"your float is = "<<f<<endl;
+	cout<<"your double is = "<<d<<endl;*/
+    system("pause");
+	return 0;
+}
